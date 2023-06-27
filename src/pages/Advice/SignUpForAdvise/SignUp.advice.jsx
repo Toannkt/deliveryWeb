@@ -147,7 +147,7 @@ export default function SignUpForAdvice() {
                         <a href='#' target='_blank'>
                               <img
                                     className='w-full h-full object-cover'
-                                    src=' https://jtexpress.vn/storage/app/uploads/public/626/a55/4e9/626a554e9ad10644694520.png '
+                                    src='https://www.larcenter.com.br/wp-content/uploads/sites/3/curriculos/lc-cn-banner-home-site.png'
                                     alt='banner-tuvan'
                               />
                         </a>

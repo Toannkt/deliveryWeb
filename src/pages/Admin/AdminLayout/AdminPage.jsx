@@ -9,7 +9,7 @@ import { ImProfile } from "react-icons/im";
 import { Layout, Menu } from "antd";
 import React, { useState, useContext, useEffect } from "react";
 import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
-import logo from "../../../assets/icons/logo-J&T.svg";
+import logo from "../../../assets/icons/logo-T&T.svg";
 import { MainContext } from "../../../context/MainContext";
 import AdminDropDownAvatar from "./AdminDropDownAvatar";
 const { Header, Sider, Content } = Layout;

@@ -131,14 +131,14 @@ const coops = [
             name: "Vũ An Phương",
             description: "Chủ cửa hàng thiết bị gia dụng tại Hà Nội",
             avatar: "https://jtexpress.vn/storage/app/uploads/public/628/5b6/c28/6285b6c28930f965243715.jpg",
-            quote: "Nhờ J&T Express mà shop của tôi được nhiều khách hàng đánh giá tốt về thời gian ship hàng. Giá thành tiết kiệm, đội ngũ shipper chuyên nghiệp hỗ trợ rất nhiều cho công việc kinh doanh của tôi.",
+            quote: "Nhờ T&T Delivery mà shop của tôi được nhiều khách hàng đánh giá tốt về thời gian ship hàng. Giá thành tiết kiệm, đội ngũ shipper chuyên nghiệp hỗ trợ rất nhiều cho công việc kinh doanh của tôi.",
       },
       {
             _id: 5,
             name: "Võ Ngọc Trâm",
             description: "Chủ shop quần áo tại Tp.HCM",
             avatar: "https://jtexpress.vn/storage/app/uploads/public/628/5ba/16a/6285ba16a1c9c707213911.jpg",
-            quote: "Tôi đã từng hợp tác với nhiều đơn vị chuyển phát nhưng cuối cùng quyết định đồng hành cùng J&T Express. Phải nói rằng, hệ thống bưu cục đồng nhất về chất lượng khắp 63 tỉnh thành là điểm làm tôi hài lòng nhất.",
+            quote: "Tôi đã từng hợp tác với nhiều đơn vị chuyển phát nhưng cuối cùng quyết định đồng hành cùng T&T Delivery. Phải nói rằng, hệ thống bưu cục đồng nhất về chất lượng khắp 63 tỉnh thành là điểm làm tôi hài lòng nhất.",
       },
 ];
 const partnersFake = [
@@ -538,7 +538,7 @@ const Home = () => {
             width="731"
             height="411"
             src="https://www.youtube.com/embed/99RCEdAP_yk"
-            title="J&T Express tự hào ra mắt Trung tâm trung chuyển lớn nhất Việt Nam"
+            title="T&T Delivery tự hào ra mắt Trung tâm trung chuyển lớn nhất Việt Nam"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -581,11 +581,11 @@ const Home = () => {
                               <div className='grid grid-cols-1 lg:grid-cols-[60%_35%] gap-x-10 '>
                                     <div className='flex flex-col justify-center items-center  '>
                                           <span>
-                                                Từ khi đặt chân vào Việt Nam năm 2018, J&T Express luôn nỗ lực hết mình,
-                                                hoàn thành nghĩa vụ của một đối tác vận chuyển lớn trong khu vực, mang
-                                                lại dịch vụ tốt nhất cho tất cả khách hàng, nhận về nhiều lời khen và
-                                                nhận xét tích cực. Đây là sự tự hào và động lực để J&T Express tiếp tục
-                                                giữ vững thành tích, phát huy dịch vụ, nâng cao hơn nữa trải nghiệm
+                                                Từ khi đặt chân vào Việt Nam năm 2018, T&T Delivery luôn nỗ lực hết
+                                                mình, hoàn thành nghĩa vụ của một đối tác vận chuyển lớn trong khu vực,
+                                                mang lại dịch vụ tốt nhất cho tất cả khách hàng, nhận về nhiều lời khen
+                                                và nhận xét tích cực. Đây là sự tự hào và động lực để T&T Delivery tiếp
+                                                tục giữ vững thành tích, phát huy dịch vụ, nâng cao hơn nữa trải nghiệm
                                                 khách hàng.
                                           </span>
 

@@ -119,7 +119,7 @@ function About() {
                               <img
                                     src='https://www.pngitem.com/pimgs/m/533-5336048_convenience-delivery-motor-ads-hd-png-download.png'
                                     class='w-full xl:w-[420px] h-full object-cover'
-                                    alt='J&T Express - Về chúng tôi'
+                                    alt='T&T Delivery - Về chúng tôi'
                               />
                         </div>
                   </div>

@@ -41,12 +41,44 @@ import {
       Contact,
       SignUpAdvice,
       PageNotFound,
+      //------
+      PurchaseDriver,
+      NotificationDriver,
+      StaffLogin,
+      StaffRegister,
+      LayerStorekeeper,
+      Bills,
+      InventoryDetail,
+      NotiStorekeeper,
+      AdminPage,
+      AdminAbout,
+      AdminContactUs,
+      AdminCommitment,
+      AdminContactMessage,
+      AdminDeliveryService,
+      AdminPartner,
+      AdminCareer,
+      AdminApplicant,
+      AdminDepartment,
+      AdminWarehouse,
+      AdminCar,
+      AdminRoad,
+      AdminStaff,
+      AdminCustomer,
+      AdminOrder,
+      AdminBill,
+      AdminTurnover,
+      AdminMaintenance,
+      AdminProhibitProduct,
+      AdminSchedule,
 } from "./pages/pageExport";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainProvider, { MainContext } from "./context/MainContext";
 import Metadata from "./SEO/Metadata";
+import StaffRoute from "./layouts/StaffLayout";
 import CustomerRoute from "./layouts/CustomerRoute";
 import ProtectedRoute from "./layouts/ProtectLayout";
+import DriverRoute from "./layouts/DriverRoute";
 const App = () => {
       return (
             <MainProvider>
@@ -130,6 +162,89 @@ const App = () => {
                                                 <Route path='tu-van/lien-he' element={<Contact />} />
                                                 <Route path='tu-van/dang-ki-tu-van' element={<SignUpAdvice />} />
                                                 <Route path='*' element={<PageNotFound />} />
+                                                {/* -----------------------Nhân viên----------------------- */}
+                                                <Route element={<StaffRoute />}>
+                                                      <Route path='/' element={<DefaultLayout />}>
+                                                            <Route element={<DriverRoute />}>
+                                                                  <Route
+                                                                        path='tai-xe/dat-hang'
+                                                                        element={<PurchaseDriver />}
+                                                                  />
+                                                                  <Route
+                                                                        path='tai-xe/thong-bao/don-hang'
+                                                                        element={<NotificationDriver />}
+                                                                  />
+                                                            </Route>
+                                                            <Route
+                                                                  path='dang-nhap-nhan-vien'
+                                                                  element={<StaffLogin />}
+                                                            />
+                                                      </Route>
+                                                      <Route path='dang-ki-nhan-vien' element={<StaffRegister />} />
+                                                      <Route path='thu-kho' element={<LayerStorekeeper />}>
+                                                            <Route index element={<Bills />} />
+                                                            <Route path='van-don' element={<Bills />} />
+                                                            <Route path='hang-ton-kho' element={<InventoryDetail />} />
+                                                            {/* <Route path="hang-ton-kho/:id" element={<InventoryDetail />} /> */}
+                                                            <Route path='thong-bao' element={<NotiStorekeeper />} />
+                                                      </Route>
+                                                      {/* -----------------------admin----------------------- */}
+                                                      <Route path='quan-tri' element={<AdminPage />}>
+                                                            <Route path='ve_chung_toi' element={<AdminAbout />}></Route>
+                                                            <Route path='lien_he' element={<AdminContactUs />}></Route>
+                                                            <Route
+                                                                  path='commitment'
+                                                                  element={<AdminCommitment />}
+                                                            ></Route>
+                                                            <Route
+                                                                  path='tin_nhan'
+                                                                  element={<AdminContactMessage />}
+                                                            ></Route>
+                                                            <Route
+                                                                  path='dich-vu'
+                                                                  element={<AdminDeliveryService />}
+                                                            ></Route>
+                                                            <Route path='partner' element={<AdminPartner />}></Route>
+                                                            <Route path='viec-lam' element={<AdminCareer />}></Route>
+                                                            <Route path='ung-vien' element={<AdminApplicant />}></Route>
+                                                            <Route
+                                                                  path='phong-ban'
+                                                                  element={<AdminDepartment />}
+                                                            ></Route>
+                                                            <Route path='kho' element={<AdminWarehouse />}></Route>
+                                                            <Route path='phuong-tien' element={<AdminCar />}></Route>
+                                                            <Route path='hanh-trinh' element={<AdminRoad />}></Route>
+                                                            <Route path='nhan_vien' element={<AdminStaff />}></Route>
+                                                            <Route
+                                                                  path='khach_hang'
+                                                                  element={<AdminCustomer />}
+                                                            ></Route>
+                                                            <Route path='don_hang' element={<AdminOrder />}></Route>
+                                                            <Route path='hoa_don' element={<AdminBill />}>
+                                                                  {" "}
+                                                            </Route>
+                                                            <Route path='doanh_so' element={<AdminTurnover />}>
+                                                                  {" "}
+                                                            </Route>
+                                                            <Route
+                                                                  path='them-nhan-vien'
+                                                                  element={<StaffRegister />}
+                                                            ></Route>
+                                                            <Route
+                                                                  path='phi-bao-tri'
+                                                                  element={<AdminMaintenance />}
+                                                            ></Route>
+                                                            <Route
+                                                                  path='hang_cam_gui'
+                                                                  element={<AdminProhibitProduct />}
+                                                            >
+                                                                  {" "}
+                                                            </Route>
+                                                            <Route path='lich_trinh' element={<AdminSchedule />}>
+                                                                  {" "}
+                                                            </Route>
+                                                      </Route>
+                                                </Route>
                                           </Route>
                                     </Routes>
                               </div>
